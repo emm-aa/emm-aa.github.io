@@ -725,7 +725,48 @@ footer {
     min-width: 2%;
 }
 
-@media(max-width: 700px) {}
+@media(max-width: 650px) {
+    .sections {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem;
+        gap: 20px;
+    }
+
+    .section {
+        padding: 10px;
+        justify-content: space-around;
+        width: 90%;
+    }
+
+    section h1 {
+        top: 15%;
+    }
+
+    section h2 {
+        top: 25%;
+    }
+
+    section h1,
+    section h2 {
+        position: absolute;
+        font-size: 250%;
+        opacity: 0;
+        animation: fadeIn 3s forwards;
+        transition: all 0.3s ease;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .box button {
+        transform: scale(1.3);
+    }
+}
 
 @media(max-width: 900px) {
     .gallery .image {
@@ -741,6 +782,10 @@ footer {
         flex-direction: column;
         flex-wrap: wrap;
         max-width: 80%;
+    }
+
+    section h1 {
+        top: 20%;
     }
 }
 
